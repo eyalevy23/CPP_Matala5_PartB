@@ -15,24 +15,12 @@ namespace ariel{
             std::vector<int*> _primeVec;
            
         public:
-            // std::multiset<int> _ascendingIteratorElements;
-            // MagicalContainer(/* args */);
-            // ~MagicalContainer();
             void addElement(int element);
             void removeElement(int element);
             void update_ascendingVec();
             void update_sideCrossVec();
             void update_primeVec();
             int size() const;
-    
-    
-        // MagicalContainer::MagicalContainer(/* args */)
-        // {
-        // }
-        
-        // MagicalContainer::~MagicalContainer()
-        // {
-        // }
 
         class AscendingIterator
             {
@@ -74,12 +62,6 @@ namespace ariel{
                 // Constructors
                 SideCrossIterator(MagicalContainer &container);
                 SideCrossIterator(const SideCrossIterator &other);
-
-                // ~SideCrossIterator() = default;
-                // SideCrossIterator &operator=(const SideCrossIterator &other);
-                // SideCrossIterator(SideCrossIterator &&other) noexcept = default;
-                // SideCrossIterator &operator=(SideCrossIterator &&other) noexcept { return *this; }
-
                 SideCrossIterator& operator++();
                 int operator*();
                 bool operator==(const SideCrossIterator& other) const;
@@ -102,11 +84,6 @@ namespace ariel{
                 // Constructors
                 PrimeIterator(MagicalContainer &container);
                 PrimeIterator(const PrimeIterator &other);
-
-                // ~PrimeIterator() = default;
-                // PrimeIterator &operator=(const PrimeIterator &other);
-                // PrimeIterator(PrimeIterator &&other) noexcept = default;
-                // PrimeIterator &operator=(PrimeIterator &&other) noexcept { return *this; }
 
                 PrimeIterator& operator++();
                 int operator*();
